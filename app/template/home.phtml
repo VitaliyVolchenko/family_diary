@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+        a {
+            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+    </style>
+</head>
+
+<body>
+<div id="header">
+    <a href="home.php?q=logout">LOGOUT</a>
+</div>
+<div id="main-body">
+    <br/>
+    <h2>
+        Hello <?php $user->get_category($uid);?>  <?php $user->get_name($uid); ?>!
+    </h2>
+</div>
+
+<h3>Upload file with housework:</h3>
+<form action="" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit" name="btn-upload">UPLOAD</button>
+</form>
+<div id="header">
+    <a href="tasks.php">WATCH HOMEWORK</a>
+</div>
+</body>
+</html>

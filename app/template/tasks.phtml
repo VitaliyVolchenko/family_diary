@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Homework</title>
+    <style>
+        a {
+            text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <a href="home.php"><=BACKWARD</a>
+    </div>
+    <div id="main-body">
+        <h2>
+            Hello <?php $user->get_category($uid);?>  <?php $user->get_name($uid); ?>!
+        </h2>
+    </div>
+    <div>
+        <h3>
+            Housework:<br/>
+        </h3>
+            <?php $user->get_tasks();?>
+    </div>
+</body>
+</html>
